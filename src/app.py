@@ -42,6 +42,7 @@ graph_precision_recall_curve(y_test, y_probs_xgb, "XGBoost")
 graph_roc_curve(y_test, y_probs_rf, "Random Forest")
 graph_precision_recall_curve(y_test, y_probs_rf, "Random Forest")
 
+graph_importances(rf, "Random Forest")
 graph_importances(xgb, "XGBoost")
 
 print(f"Logistic Regression: \n{regression_report}")
